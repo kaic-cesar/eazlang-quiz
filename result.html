@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Resultado</title>
+</head>
+<body>
+  <div class="ad-space top-ad">Top Ad</div>
+  <div class="container">
+    <h1 style="color: #fff;">Resultado do Quiz</h1>
+    <p id="summary" style="color: #ffffff; font-weight: bold; background-color: #007bff; padding: 5px;"></p>
+    <div id="details"></div>
+    <p class="thanks" style="color: #fff;">Obrigado por participar! Te vejo amanhã com um novo quiz.</p>
+    <button class="btn btn-blue" onclick="window.location.href='index.html'">Iniciar Novamente</button>
+  </div>
+  <div class="ad-space bottom-ad">Bottom Ad</div>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const score = params.get('score');
+    const total = params.get('total');
+    const results = JSON.parse(decodeURIComponent(params.get('results')));
+
+    document.getElementById("summary").innerText = `Você acertou ${score} de ${total} perguntas.`;
+
+    const details = document.getElementById("details");
+    results.forEach((item, index) => {
+      const div = document.createElement("div");
+      div.className = index % 2 === 0 ? "result-block light" : "result-block white";
+      div.innerHTML = `
+        <strong>Pergunta ${index + 1}:</strong> ${item.question}<br>
+        <strong>Sua resposta:</strong> ${item.selected}<br>
+        <strong>Correta:</strong> ${item.correct}
+      `;
+      details.appendChild(div);
+    });
+  </script>
+</body>
+</html>

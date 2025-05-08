@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Quiz App</title>
+</head>
+<body>
+  <div class="ad-space top-ad">Top Ad</div>
+  <div class="container welcome-container">
+    
+    <div class="welcome-content">
+      <img src="assets/logo.png" alt="" class="logo">
+      <h1 style="color: #fff; margin-top: 50px;">Bem-vindo ao Quiz!</h1>
+      <button id="startBtn" class="btn btn-blue">Iniciar Quiz</button>
+    </div>
+  </div>
+   <div class="ad-space bottom-ad">Bottom Ad</div>
+  <script>
+    document.getElementById("startBtn").addEventListener("click", function () {
+      window.location.href = "quiz.html";
+    });
+  </script>
+</body>
+</html>
