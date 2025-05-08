@@ -1,53 +1,53 @@
 const questions = [
   {
-    question: "Qual é a capital do Brasil?",
-    answers: ["São Paulo", "Brasília", "Rio de Janeiro"],
-    correct: "Brasília"
+    question: "1) Qual é a cor do céu em um dia claro? ",
+    answers: ["Green", "Yellow", "Blue"],
+    correct: "Blue"
   },
   {
-    question: "Quanto é 2 + 2?",
-    answers: ["3", "4", "5"],
-    correct: "4"
+    question: "2) Qual destes é um animal que late?",
+    answers: ["Dog", "Cat", "Bird"],
+    correct: "Dog"
   },
   {
-    question: "Qual é a cor do céu em um dia claro?",
-    answers: ["Azul", "Verde", "Amarelo"],
-    correct: "Azul"
+    question: "3) Qual fruta é vermelha e tem sementes pequenas?",
+    answers: ["Banana", "Apple", "Orange"],
+    correct: "Apple"
   },
   {
-    question: "Qual o maior planeta do sistema solar?",
-    answers: ["Terra", "Júpiter", "Marte"],
-    correct: "Júpiter"
+    question: "4) Qual destes é um objeto usado para escrever?",
+    answers: ["Pen", "Plate", "Cup"],
+    correct: "Pen"
   },
   {
-    question: "Em que continente está o Egito?",
-    answers: ["África", "Ásia", "Europa"],
-    correct: "África"
+    question: "5) Qual destes é um animal que voa?",
+    answers: ["Fish", "Cat", "Bird"],
+    correct: "Bird"
   },
   {
-    question: "Quem escreveu Dom Casmurro?",
-    answers: ["Machado de Assis", "Carlos Drummond", "Clarice Lispector"],
+    question: "6) Qual destes é um objeto usado para beber?",
+    answers: ["Plate", "Cup", "Fork"],
     correct: "Machado de Assis"
   },
   {
-    question: "Qual é o idioma falado na França?",
-    answers: ["Francês", "Inglês", "Alemão"],
-    correct: "Francês"
+    question: "7) Qual destes é uma fruta amarela e curvada?",
+    answers: ["Grape", "Banana", "Pineapple"],
+    correct: "Banana"
   },
   {
-    question: "Qual é o símbolo químico da água?",
-    answers: ["O2", "H2O", "CO2"],
-    correct: "H2O"
+    question: "8) Qual destes é um animal que mia?",
+    answers: ["Cat", "Dog", "Cow"],
+    correct: "Cat"
   },
   {
-    question: "Quantos dias tem um ano bissexto?",
-    answers: ["365", "366", "367"],
-    correct: "366"
+    question: "9) Qual cor é o sol?",
+    answers: ["Yellow", "Blue", "Red"],
+    correct: "Yellow"
   },
   {
-    question: "Qual o animal símbolo da Austrália?",
-    answers: ["Leão", "Canguru", "Urso"],
-    correct: "Canguru"
+    question: "10) Qual destes é um objeto usado para cortar papel?",
+    answers: ["Scissors", "Knife", "Fork"],
+    correct: "Scissors"
   }
 ];
 
